@@ -4,13 +4,19 @@ behave mswin
 filetype on
 syntax on
 colorscheme github
+let mapleader=" "
 
-set guifont=Lucida_Console:h9
-set lines=35 columns=150
+if has ("unix")
+  set guifont=Lucida_Console:h12
+  set lines=55 columns=150
+elseif has ("win32") || has ("win64")
+  set guifont=Lucida_Console:h9
+  set lines=35 columns=150
+endif
+
 set number
 set ruler
 
-let mapleader=" "
 
 set hidden
 set history=100
@@ -22,10 +28,22 @@ set shiftwidth=2
 set expandtab
 set smartindent
 set autoindent
-set showmatch
+set noerrorbells              " No error bells please
+set showmode
+set showcmd
+set nocompatible              " vim, not vi
 
+
+
+"  searching
 " When running a search, get Vim to highlight found words:
 set hlsearch
+set incsearch                 " incremental search
+set ignorecase                " search ignoring case
+set hlsearch                  " highlight the search
+set showmatch                 " show matching bracket
+set diffopt=filler,iwhite     " ignore all whitespace and sync
+
 
 
 "remove whitespaces on save
