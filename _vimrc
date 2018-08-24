@@ -1,5 +1,5 @@
 source $VIMRUNTIME/mswin.vim
-behave mswin
+" behave mswin
 
 filetype on
 syntax on
@@ -8,7 +8,7 @@ let mapleader=" "
 
 if has ("unix")
   set guifont=Lucida_Console:h12
-  set lines=55 columns=150
+  " set lines=55 columns=150
 elseif has ("win32") || has ("win64")
   set guifont=Lucida_Console:h9
   set lines=35 columns=150
@@ -22,7 +22,7 @@ set hidden
 set history=100
 
 filetype indent on
-set nowrap
+set wrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
