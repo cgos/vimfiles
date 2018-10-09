@@ -1,4 +1,4 @@
-source $VIMRUNTIME/mswin.vim
+" source $VIMRUNTIME/mswin.vim
 " behave mswin
 
 filetype on
