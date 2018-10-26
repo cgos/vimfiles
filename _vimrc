@@ -14,13 +14,15 @@ elseif has ("win32") || has ("win64")
   set lines=35 columns=150
 endif
 
+"managing .swp files
+"https://vi.stackexchange.com/questions/177/what-is-the-purpose-of-swap-files
+set directory^=$HOME/.vim/swap//
+"set backupdir^=$HOME/.vim/tmp//
+
 set number
 set ruler
-
-
 set hidden
 set history=100
-
 filetype indent on
 set wrap
 set tabstop=2
@@ -32,9 +34,6 @@ set noerrorbells              " No error bells please
 set showmode
 set showcmd
 set nocompatible              " vim, not vi
-
-
-
 "  searching
 " When running a search, get Vim to highlight found words:
 set hlsearch
