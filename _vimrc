@@ -3,7 +3,13 @@
 
 filetype on
 syntax on
-colorscheme github
+
+"colorscheme github
+set background=dark
+colorscheme nord
+"colorscheme github
+"colorscheme vim-solarized8/colors/solarized8_low
+
 let mapleader=" "
 
 if has ("unix")
